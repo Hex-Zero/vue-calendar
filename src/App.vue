@@ -1,6 +1,6 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <h1>{{ greeting }}</h1>
+  <img alt="Vue logo" ref="logo" src="./assets/logo.png">
+  <button @click="handleClick">show</button>
 </template>
 
 <script>
@@ -10,6 +10,11 @@ export default {
     return{
       greeting: "OI"
     }
+  },
+  methods:{
+  handleClick(){
+    console.log(this.$refs.logo);
+  }
   }
 }
 </script>
