@@ -13,7 +13,7 @@ export default {
   },
   data() {
     return {
-      greeting: "OI",
+      greeting: "Hi",
     };
   },
   methods: {
