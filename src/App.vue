@@ -1,7 +1,7 @@
 <template>
   <img alt="Vue logo" ref="logo" src="./assets/logo.png" />
   <button @click="handleClick">show</button>
-  <Modal />
+  <Modal greeting="Hello" />
 </template>
 
 <script>

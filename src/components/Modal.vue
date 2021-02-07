@@ -1,10 +1,16 @@
 <template>
   <div class="backdrop">
     <div class="modal">
-      <p>modal</p>
+      <p>{{ greeting }}</p>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  props: ["greeting"],
+};
+</script>
 
 <style scoped>
 .modal {
