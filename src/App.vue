@@ -1,7 +1,7 @@
 <template>
   <img alt="Vue logo" ref="logo" src="./assets/logo.png" />
   <button @click="handleClick">show</button>
-  <Modal greeting="Hello" />
+  <Modal greeting="Hello" v-if="showModal" />
 </template>
 
 <script>
@@ -14,11 +14,12 @@ export default {
   data() {
     return {
       greeting: "Hi",
+      showModal: false,
     };
   },
   methods: {
     handleClick() {
-      console.log(this.$refs.logo);
+      this.showModal = true;
     },
   },
 };
